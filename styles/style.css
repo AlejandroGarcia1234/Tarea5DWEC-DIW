@@ -7,7 +7,7 @@
 	--background-color: #442d04af;
 	--nav-background-color: #0a0a0a;
 	--form-color: #f7e0e0;
-    --card-btn-color: #a01313;
+    --card-btn-color: #bd5b10;
     --card-color: #f7e0e0;
 	--button-color: #a01313;
 	--shadow-color: rgba(0, 0, 0, 0.7);
@@ -210,17 +210,16 @@ body {
 }
 
 .hero-logo {
-        /* El resto de tu código... */
-        background-image: url('/assets/img/jaklogo.png');
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        width: 700px; /* Ajusta esto a la anchura que desees para tu logo */
-        height: 700px; /* Ajusta esto a la altura que desees para tu logo */
-        position: absolute;
-        top: 50%; /* Centra el logo verticalmente */
-        left: 50%; /* Centra el logo horizontalmente */
-        transform: translate(-50%, -50%); /* Asegura que el centro del logo esté en el centro del contenedor */
+    background-image: url('/assets/img/jaklogo.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 700px; 
+    height: 700px; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .body-text {
@@ -281,7 +280,7 @@ body {
     margin-bottom: 1rem;
 }
 
-.card-btn-container {
+.cards-btn {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -299,7 +298,7 @@ body {
     align-items: center;
     padding: 1rem;
     border: none;
-    border-radius: 0.5rem;
+    border-radius: 1rem;
     background: var(--card-btn-color);
     color: var(--card-color);
     font-size: var(--card-btn-font-size);
@@ -441,19 +440,6 @@ input[type='submit']:hover {
     color: var(--button-color);
 }
 
-.errores {
-	font-size: 0.8rem;
-	color: red;
-}
-
-.valid-form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 10rem;
-    font-size: var(--main-form-font-size);
-}
 
 @media screen and (width < 768px) {
 	:root {
@@ -472,17 +458,4 @@ input[type='submit']:hover {
 	}
 
 	
-}
-
-#loading {
-	position: fixed;
-	width: 100%;
-	height: 100%;
-	top: 0;
-	left: 0;
-	background: url(/assets/imgs/loading.jpg) center/cover;
-	z-index: 9999;
-	transform: scale(1);
-	opacity: 1;
-	transition: transform 4s ease-in-out, opacity 2s ease-in-out;
 }
