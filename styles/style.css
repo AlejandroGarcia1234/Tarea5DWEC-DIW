@@ -11,21 +11,19 @@
 	--color-sombra: rgba(0, 0, 0, 0.7);
     --color-fondo-footer: #0a0a0a;
     --color-fondo-card: #524c4c;
+    --tamano-fuente-body: 2rem;
     --altura-hero-image: 80vh;
+    --tamano-hero-logo: 10rem;
 	--tamano-fuente-nav: 2rem;
 	--altura-logo-nav: 15rem;
 	--ancho-logo-nav: 5rem;
-	--tamano-fuente-body: 2rem;
-    --tamano-hero-logo: 10rem;
 	--tamano-fuente-titulo-card: 2rem;
 	--tamano-fuente-texto-card: 1rem;
 	--tamano-fuente-boton-card: 1rem;
 	--tamano-fuente-cuerpo-footer: 1rem;
 }
 
-*,
-:after,
-:before {
+*, :after, :before {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
@@ -505,7 +503,6 @@ body {
 @media screen and (max-width: 1024px) {
 	:root {
 		--tamano-fuente-cuerpo-footer: 0.9rem;
-		--tamano-fuente-social-footer: 1.2rem;
 	}
 	.footer-body {
 		width: 80%;
@@ -515,7 +512,6 @@ body {
 @media screen and (max-width: 768px) {
 	:root {
 		--tamano-fuente-cuerpo-footer: 0.8rem;
-		--tamano-fuente-social-footer: 1rem;
 	}
 	.footer-body {
 		width: 90%;
@@ -525,7 +521,6 @@ body {
 @media screen and (max-width: 500px) {
 	:root {
 		--tamano-fuente-cuerpo-footer: 0.7rem;
-		--tamano-fuente-social-footer: 0.9rem;
 	}
 	.footer-body {
 		width: 95%;
