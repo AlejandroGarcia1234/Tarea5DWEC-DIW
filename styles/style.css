@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Ottselesque-Regular';
+    src: url(/assets/fonts/Ottselesque-Regular.otf);
+}
+
 :root {
 	--background-color: #442d04af;
 	--nav-background-color: #0a0a0a;
@@ -35,7 +40,7 @@ body {
 	font-size: 16px;
 	line-height: 1.5;
 	color: #b9b7b7;
-	font-family: 'Kanit', sans-serif;
+	font-family: 'Ottselesque-Regular', sans-serif;
 }
 
 .nav-container {
@@ -228,82 +233,87 @@ body {
 }
 
 .cards-container {
-	background: var(--background-color);
-	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
-	grid-gap: 2rem;
-	padding: 2rem;
-	margin: 0.5rem;
-	justify-content: center;
-	align-items: center;
+    background: var(--background-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    grid-gap: 2rem;
+    padding: 2rem;
+    margin: 0.5rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .card {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background: var(--card-background-color);
-	padding: 1rem;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Ajusta el espaciado vertical */
+    align-items: center;
+    background: var(--card-background-color);
+    padding: 1rem;
+    height: 100%; /* O ajusta a una altura específica que desees */
     width: 100%;
-	border-radius: 0.5rem;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-	transition: all 0.3s ease;
-	word-wrap: break-word;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all 0.3s ease;
+    word-wrap: break-word;
 }
 
 .card:hover {
-	transform: scale(1.05);
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
-}
-
-.card-title {
-	font-size: var(--card-title-font-size);
-	margin-bottom: 1rem;
-}
-
-.card-text {
-	font-size: var(--card-text-font-size);
-	margin-bottom: 1rem;
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
 }
 
 .card img {
-	height: 100%;
-	width: 100%;
-	border-radius: 5px;
+    height: 100%; /* Ajusta la altura de la imagen según tus preferencias */
+    width: 100%;
+    border-radius: 5px;
+    object-fit: cover; /* Ajusta el comportamiento de la imagen dentro del contenedor */
+    margin-bottom: 1rem; /* Espaciado inferior para la imagen */
+}
+
+.card-title {
+    font-size: var(--card-title-font-size);
+    margin-bottom: 1rem;
+}
+
+.card-text {
+    font-size: var(--card-text-font-size);
+    margin-bottom: 1rem;
 }
 
 .card-btn-container {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-end;
-	align-items: center;
-	width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
 
-	border-top: 1px solid #fff;
-	padding: 1rem;
+    border-top: 1px solid #fff;
+    padding: 1rem;
 }
 
-.card-btn, .valid-form-button{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	padding: 1rem;
-	border: none;
-	border-radius: 0.5rem;
-	background: var(--card-btn-color);
-	color: var(--card-color);
-	font-size: var(--card-btn-font-size);
-	cursor: pointer;
+.card-btn,
+.valid-form-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: none;
+    border-radius: 0.5rem;
+    background: var(--card-btn-color);
+    color: var(--card-color);
+    font-size: var(--card-btn-font-size);
+    cursor: pointer;
     text-decoration: none;
-	transition: all 0.3s ease;
+    transition: all 0.3s ease;
 }
 
-.card-btn:hover, .valid-form-button:hover {
-	background: var(--card-color);
-	color: var(--card-btn-color);
+.card-btn:hover,
+.valid-form-button:hover {
+    background: var(--card-color);
+    color: var(--card-btn-color);
 }
+
 
 .footer-body {
 	display: flex;
